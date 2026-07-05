@@ -1,147 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassnain Ali | Electronics & Electrical Engineer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hassnain Ali — Portfolio</title>
+  <meta name="description" content="Portfolio of Hassnain Ali. Projects, skills, and contact." />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Hassnain Ali</h1>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="container">
-            <h1>Hassnain Ali</h1>
-            <p>Electronics & Electrical Engineer | Automation | PLC | Industrial Maintenance</p>
-            <div class="contact">
-                <a href="mailto:Hassnainali6may@gmail.com">Email</a>
-                <a href="tel:+447417576656">Phone</a>
-                <a href="https://github.com/HASALI-eng" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/https://www.linkedin.com/in/hasnain-ali-a45771176?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Electronics and Electrical Engineer with an MSc in Electronics Engineering
-                from De Montfort University, UK. Experienced in industrial automation,
-                instrumentation, manufacturing operations, and electrical maintenance.
-                Passionate about PLC systems, process control, and semiconductor technologies.
-            </p>
-        </div>
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h2>Hi, I'm <span class="accent">Hassnain</span></h2>
+        <p class="tagline">I build clean, accessible websites and web apps. I focus on HTML, CSS, and front-end development.</p>
+        <p>
+          <a class="btn" href="#projects">See my work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <!-- Upload a headshot to assets/me.jpg and uncomment the img line below to show it -->
+        <!-- <img src="assets/me.jpg" alt="Hassnain Ali" class="avatar"> -->
+        <div class="avatar avatar-placeholder" aria-hidden="true">HA</div>
+      </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>Automation</h3>
-                    <p>PLC Systems, VFDs, Sensors, Actuators, HMI, Process Control</p>
-                </div>
-
-                <div class="card">
-                    <h3>Electrical</h3>
-                    <p>Power Distribution, Maintenance, Calibration, Commissioning</p>
-                </div>
-
-                <div class="card">
-                    <h3>Software</h3>
-                    <p>Siemens TIA Portal, MATLAB, Proteus, Microsoft Office</p>
-                </div>
-
-                <div class="card">
-                    <h3>Engineering</h3>
-                    <p>Root Cause Analysis, Troubleshooting, Technical Documentation</p>
-                </div>
-            </div>
-        </div>
+    <section class="about container" id="about">
+      <h3>About</h3>
+      <p>
+        I'm a front-end developer who loves turning ideas into simple, fast, and responsive websites. I work with HTML and CSS to craft interfaces that are both beautiful and usable.
+      </p>
+      <ul class="skills" aria-label="Skills">
+        <li>HTML5</li>
+        <li>Responsive CSS</li>
+        <li>Accessibility (a11y)</li>
+        <li>Performance-minded</li>
+      </ul>
     </section>
 
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-
-            <div class="timeline">
-                <div class="item">
-                    <h3>Technical Machine Operator</h3>
-                    <h4>Samworth Brothers, UK</h4>
-                    <span>Dec 2023 – Dec 2025</span>
-                    <p>
-                        Operated automated production machinery, performed troubleshooting,
-                        first-line maintenance, and supported continuous improvement initiatives.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <h3>Service Engineer</h3>
-                    <h4>Delta Control Automation, Pakistan</h4>
-                    <span>Feb 2021 – Feb 2022</span>
-                    <p>
-                        Installed and commissioned industrial instrumentation systems,
-                        PLCs, VFDs, and performed preventive maintenance.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <h3>Intern Engineer</h3>
-                    <h4>OBS Pharmaceutical Ltd.</h4>
-                    <span>Sep 2020 – Jan 2021</span>
-                    <p>
-                        Assisted in troubleshooting electrical systems and gained practical
-                        exposure to industrial automation and safety procedures.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <section class="projects container" id="projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Brief description of a project. Link to live demo or repo.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Source</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Another project example. Add images, tech tags, and links here.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Source</a></p>
+        </article>
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Short summary of the project and what you built.</p>
+          <p class="card-links"><a href="#">Live</a> · <a href="#">Source</a></p>
+        </article>
+      </div>
     </section>
 
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-
-            <div class="card">
-                <h3>MSc Electronics Engineering</h3>
-                <p>De Montfort University, Leicester, UK</p>
-                <p>Research: Carrier Lifetime Analysis in Semiconductors</p>
-            </div>
-
-            <div class="card">
-                <h3>BS Electrical Engineering</h3>
-                <p>FAST-NUCES, Karachi, Pakistan</p>
-                <p>Power Systems Specialization</p>
-            </div>
-        </div>
+    <section class="contact container" id="contact">
+      <h3>Contact</h3>
+      <p>If you'd like to work together or have questions, email me at <a href="mailto:you@example.com">you@example.com</a> or connect on <a href="#">LinkedIn</a>.</p>
+      <form class="contact-form" action="mailto:you@example.com" method="get" enctype="text/plain">
+        <label for="name">Name</label>
+        <input id="name" name="name" placeholder="Your name">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="A short message"></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="muted">Download resume: <a href="assets/resume.pdf">Resume (PDF)</a> — upload your resume to assets/resume.pdf to enable the link.</p>
     </section>
+  </main>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hassnain Ali — Built with HTML & CSS</p>
+    </div>
+  </footer>
 
-            <div class="card">
-                <h3>Microprocessor & Interfacing Project</h3>
-                <p>
-                    Engineering project presented at the FAST-NUCES technical exhibition
-                    and received appreciation recognition.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Semiconductor Research</h3>
-                <p>
-                    Conducted carrier lifetime analysis research to study semiconductor
-                    behavior and electronic material performance.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2026 Hassnain Ali | Electronics & Electrical Engineer</p>
-    </footer>
-
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
